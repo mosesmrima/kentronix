@@ -5,36 +5,31 @@ import {AiOutlineMenu}  from "react-icons/ai";
 
 export const NavBar = () => {
     return (
-        <div className={"fixed top-0 left-0 w-full z-10 duration-300"}>
+        <div className={" height-2 bg-gradient-to-r from-slate-50 to-blue-500  rounded-b-xl fixed top-0 left-0 w-full z-10 duration-300"}>
             <div className={"h-100 max-w-full m-auto flex justify-between items-center p-4"}>
-                <ul className={"flex justify-evenly items-center"}>
-                    <li className={"left-0"}><Link href={"/"}>
-                        <Image
-                            src={logo}
-                            width={300}
-                            height={0}
-                            alt={"logo"}
-                        />
-                    </Link></li>
-                    <li><Link href="/">Home</Link></li>
-                    <li><Link href={"#about"}>About</Link></li>
+                <Image
+                    src={logo}
+                    width={300}
+                    height={0}
+                    alt={"logo"}
+                />
+                <ul className={"sm:flex hidden text-2xl gap-4 mr-8 font-semibold"}>
+                    <li><Link href="/">HOME</Link></li>
+                    <li><Link href={"#about"}>ABOUT</Link></li>
                 </ul>
+                {/* Mobile Button*/}
+                <div className={"block sm:hidden z-10 mx-2"}>
+                    <AiOutlineMenu size={20}/>
+                </div>
+                {/* Mobile Menu*/}
+                <div className={"sm:hidden absolute top-0 bottom-0 right-0 left-0 flex justify-center items-center w-full h-screen bg-black ease-in duration-300"}>
+                    <ul className={"text-2xl gap-4 mr-8 font-semibold text-white "}>
+                        <li><Link href="/">HOME</Link></li>
+                        <li><Link href={"#about"}>ABOUT</Link></li>
+                    </ul>
+                </div>
             </div>
-            {/* Mobile Button*/}
-            <AiOutlineMenu size={20}/>
-            {/* Mobile Menu*/}
-            <ul>
-                <li><Link href={"/"}>
-                    <Image
-                        src="/logo.png"
-                        width={100}
-                        height={100}
-                        alt={"logo"}
-                    />
-                </Link></li>
-                <li><Link href="/">Home</Link></li>
-                <li><Link href={"#about"}>About</Link></li>
-            </ul>
+
         </div>
     );
 }
