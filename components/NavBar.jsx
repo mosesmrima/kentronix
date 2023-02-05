@@ -30,8 +30,8 @@ export const NavBar = () => {
                 <div className={showMenu?"sm:hidden absolute top-0 bottom-0 right-0 left-0 flex justify-center items-center w-full h-screen bg-black opacity-90 ease-in duration-300":
                     "sm:hidden absolute top-0 bottom-0 right-0 left-[-100%] flex justify-center items-center w-full h-screen bg-black opacity-90 ease-in duration-300"}>
                     <ul className={"text-2xl gap-4 mr-8 font-semibold text-white flex flex-col justify-center items-center"}>
-                        <li><Link href="/">HOME</Link></li>
-                        <li><Link href={"#about"}>ABOUT</Link></li>
+                        <li onClick={toggleMenu}><Link href="/">HOME</Link></li>
+                        <li onClick={toggleMenu}><Link href={"#about"}>ABOUT</Link></li>
                     </ul>
                 </div>
             </div>
