@@ -1,3 +1,9 @@
+@layer base {
+    html {
+        @apply scroll-smooth  bg-gradient-to-r from-slate-50 to-blue-500;
+    }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities

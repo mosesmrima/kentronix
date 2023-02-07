@@ -10,7 +10,7 @@ export const NavBar = () => {
     const toggleMenu = () => setShowMenu(!showMenu)
 
     return (
-        <div className={" height-2 bg-gradient-to-r shadow-2xl from-slate-50 to-blue-500  rounded-b-xl fixed top-0 left-0 w-full z-10 duration-300"}>
+        <div className={" height-4 shadow-2xl rounded-b-xl top-0 left-0 w-full z-10 duration-300"}>
             <div className={"h-100 max-w-full m-auto flex justify-between items-center p-4"}>
                 <Image
                     src={logo}
@@ -23,11 +23,11 @@ export const NavBar = () => {
                     <li><Link href={"#about"}>ABOUT</Link></li>
                 </ul>
                 {/* Mobile Button*/}
-                <div className={"block sm:hidden z-10 w-full"} onClick={toggleMenu}>
+                <div className={"block sm:hidden z-10 w-full fixed top-0 right-2"} onClick={toggleMenu}>
                     {showMenu?<AiOutlineClose size={25} className={"text-blue-400 hover:cursor-pointer ml-auto transition duration-300"}/>:<AiOutlineMenu size={25} className={"ml-auto transition duration-300"}/>}
                 </div>
                 {/* Mobile Menu*/}
-                <div className={showMenu?"sm:hidden absolute top-0 bottom-0 right-0 left-0 flex justify-center items-center w-full h-screen bg-black opacity-90 ease-in duration-300":
+                <div className={showMenu?"sm:hidden fixed top-0 bottom-0 right-0 left-0 flex justify-center items-center w-full h-screen bg-black opacity-90 ease-in duration-300":
                     "sm:hidden absolute top-0 bottom-0 right-0 left-[-100%] flex justify-center items-center w-full h-screen bg-black opacity-90 ease-in duration-300"}>
                     <ul className={"text-2xl gap-4 mr-8 font-semibold text-white flex flex-col justify-center items-center"}>
                         <li onClick={toggleMenu}><Link href="/">HOME</Link></li>
