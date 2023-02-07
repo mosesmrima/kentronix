@@ -23,7 +23,7 @@ export const NavBar = () => {
                     <li><Link href={"#about"}>ABOUT</Link></li>
                 </ul>
                 {/* Mobile Button*/}
-                <div className={"block sm:hidden z-10 w-full fixed top-0 right-2"} onClick={toggleMenu}>
+                <div className={"block sm:hidden z-10 w-full fixed top-0 right-2 overflow-hidden"} onClick={toggleMenu}>
                     {showMenu?<AiOutlineClose size={25} className={"text-blue-400 hover:cursor-pointer ml-auto transition duration-300"}/>:<AiOutlineMenu size={25} className={"ml-auto transition duration-300"}/>}
                 </div>
                 {/* Mobile Menu*/}
