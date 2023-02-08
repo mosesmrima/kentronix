@@ -1,23 +1,33 @@
 import Image from "next/image";
-import logo from "../public/favicon.png";
+
 
 export default function AboutUs() {
     return (
-        <div className={"sm:mt-8 w-11/12 w-[80vw] sm:h-80 h-[70vh] sm:mx-0 ml-4 justify-center flex sm:flex-row flex-col sm:flex-shrink-0 relative items-center"}>
-            <div className={"sm:mx-0  rounded-full  bg-gradient-to-r from-slate-50 to-blue-500 z-[200] sm:opacity-100 opacity-90 sm:w-7/12 w-[85vw] sm:h-80 h-[55vh] px-4  flex flex-col justify-center items-center text-center sm:relative absolute"}>
-                <h1>About Us</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-            <div className={" sm:w-4/12 w-12/12 sm:h-80 h-[5/12] sm:z-0 z-[] sm:relative"}>
-                <Image
-                    src={"/favicon.png"}
-                    fill
-                    object-fit={"scale-down"}
-                    alt={"logo"}
-                />
-            </div>
-        </div>
+       <div className={"sm:w-10/12 w-11/12 sm:max-h-[30rem] mx-auto mt-16 sm:flex relative rounded-b-full shadow-2xl"}>
+           <div className={"sm:h-12/12 h-11/12 sm:w-7/12  bg-gradient-to-r from-slate-50 to-blue-500 "}>
+             <h1 className={"text-center text-4xl font-extrabold"}>About Us</h1>
+             <p className={"w-10/12 mx-auto"}>
+                 Kentronix is a leading technology and solutions provider specializing in software development,
+                 systems support and I.T  consultancy. Our expertise spans software design  and development, project
+                 management, systems audit, business process automation, scalable E-business  systems, networking and wireless
+                 solutions. We can help you streamline your business operations and transform your organization. We employ
+                 proven best practices and process to improve efficiency throughout your enterprise by improving services and
+                 cutting down operations costs there by increasing your profit margins. The force behind our success is a team
+                 of talented and proficient professionals who deliver a pool of extra ordinary expertise in both I.C.T and management
+                 fields.
+             </p>
+         </div>
+           <div className={"sm:max-h-80 h-96 sm:w-5/12 w-[70vw] sm:static absolute top-0 sm:z-0 z-[100] sm:opacity-100 opacity-50"}>
+               <div className={"relative sm:h-full h-full sm:w-full w-full"}>
+                   <Image
+                       src={"/favicon.png"}
+                       fill
+                       layout={"raw"}
+                       alt={"logo"}
+                   />
+               </div>
+           </div>
+
+       </div>
     );
 }

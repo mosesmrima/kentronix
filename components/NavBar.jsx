@@ -20,10 +20,10 @@ export const NavBar = () => {
                      className={"px-4"}
                  />
              </div>
-            <uL className={"w-4/12 sm:flex hidden gap-4 justify-end px-12"}>
+            <ul className={"w-4/12 sm:flex hidden gap-4 justify-end px-12"}>
                 <li><Link href="/">HOME</Link></li>
                 <li><Link href={"#about"}>ABOUT</Link></li>
-            </uL>
+            </ul>
 
             {/* Mobile Button*/}
             <div className={"block sm:hidden w-4/12 z-10 p-4 overflow-hidden"} onClick={toggleMenu}>
