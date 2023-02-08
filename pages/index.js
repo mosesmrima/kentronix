@@ -11,7 +11,7 @@ export default function Home() {
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Head>
         <NavBar/>
-        <div className={"sm:mt-8 mt-40 w-full"}>
+        <div className={"sm:mt-8 mt-12 w-full"}>
             <AboutUs/>
             {/*<Services/>*/}
         </div>
