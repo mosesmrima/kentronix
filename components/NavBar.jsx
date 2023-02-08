@@ -10,7 +10,7 @@ export const NavBar = () => {
     const toggleMenu = () => setShowMenu(!showMenu)
 
     return (
-        <div className={"w-full sm:h-32 h-28 shadow-2xl rounded-b-xl z-10 flex justify-between items-center sm:relative fixed top-0 bg-gradient-to-r from-slate-50 to-blue-500 z-100"}>
+        <div className={"w-full sm:h-32 h-28 shadow-2xl rounded-b-xl z-10 flex justify-between items-center sm:relative fixed top-0 bg-gradient-to-r from-slate-50 to-blue-500 z-[1000]"}>
              <div className={"sm:w-4/12 w-7/12 relative sm:h-28 h-24 flex justify-start"}>
                  <Image
                      src={"/logo.svg"}
