@@ -10,7 +10,7 @@ export default function AboutUs() {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
-            <div className={" sm:w-4/12 w-12/12 sm:h-80 sm:z-0 z-[-200] sm:relative"}>
+            <div className={" sm:w-4/12 w-12/12 sm:h-80 sm:z-0 z-[-200] sm:relative sm:opacity-100 opacity-60"}>
                 <Image
                     src={"/favicon.png"}
                     fill
