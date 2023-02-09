@@ -1,10 +1,13 @@
 import Image from "next/image";
-
+import {motion, useMotionValue, useTransform} from "framer-motion"
 
 export default function AboutUs() {
+    const rotate = useMotionValue(0)
+    const circularMotion = useTransform(rotate, value => `rotate(${value}deg)`)
+
     return (
-       <div className={"sm:w-10/12 w-11/12 sm:max-h-[30rem] mx-auto mt-16 sm:flex relative rounded-b-full shadow-2xl"}>
-           <div className={"sm:h-12/12 h-11/12 sm:w-7/12  bg-gradient-to-r from-slate-50 to-blue-500 "}>
+       <div className={"sm:w-10/12 w-11/12 sm:max-h-[50rem] mx-auto mt-16 sm:flex relative rounded-full shadow-2xl"}>
+           <div className={"sm:h-12/12 h-11/12 sm:w-9/12  bg-gradient-to-r from-slate-50 to-blue-500 rounded-3xl shadow-2xl"}>
              <h1 className={"text-center text-4xl font-extrabold"}>About Us</h1>
              <p className={"w-10/12 mx-auto"}>
                  Kentronix is a leading technology and solutions provider specializing in software development,
@@ -18,14 +21,21 @@ export default function AboutUs() {
              </p>
          </div>
            <div className={"sm:max-h-80 h-96 sm:w-5/12 w-[70vw] sm:static absolute top-0 sm:z-0 z-[100] sm:opacity-100 opacity-50"}>
-               <div className={"relative sm:h-full h-full sm:w-full w-full"}>
+               <motion.div className={"relative sm:h-full h-full sm:w-full w-full"}
+                           animate={{ rotate: 360, scale: [0.9, 0.9, 0.8, 0.7, 0.7, 0.8, 0.9, 0.9] }}
+                           transition={{ duration: 4, repeat: Infinity }}
+                           style={{
+                               style: { transform: circularMotion}
+                           }}
+                   >
                    <Image
                        src={"/favicon.png"}
                        fill
                        layout={"raw"}
                        alt={"logo"}
+                       className={"drop-shadow-lg"}
                    />
-               </div>
+               </motion.div>
            </div>
 
        </div>
