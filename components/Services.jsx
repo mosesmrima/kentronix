@@ -9,8 +9,8 @@ export default function Services() {
     }, [])
     return (
         <>
-            <h1>Services</h1>
-            <div className={"p-0 m-0 w-[100vw] h-[70vh] overflow-hidden flex justify-center items-center"}>
+            <div className={"p-0 m-0 w-[100vw] h-[70vh] overflow-hidden flex flex-col justify-center items-center"}>
+                <h1>Services</h1>
                 <motion.div ref={carousel} className={"carousel cursor-grab w-10/12 overflow-hidden flex"}>
                     <motion.div drag={"x"} dragConstraints={{right: 0, left: -width}} className={"inner-carousel flex flex-shrink-0  w-12/12 h-[400px] justify-center items-center "}>
                         {
