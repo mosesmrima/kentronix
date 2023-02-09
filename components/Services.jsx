@@ -15,7 +15,7 @@ export default function Services() {
                     <motion.div drag={"x"} dragConstraints={{right: 0, left: -width}} className={"inner-carousel flex flex-shrink-0  w-12/12 h-[400px] justify-center items-center "}>
                         {
                             [1,2,3,4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((el) => (
-                                <motion.div key={el} className={"p-8 rounded-3xl carousel-item w-[30vw] h-[50vh] min-w-28 bg-green-300 m-4 flex-shrink-0 pointer-events-none"}>
+                                <motion.div key={el} className={"p-8 rounded-3xl carousel-item sm:w-[30vw] w-[70vw] sm:h-[50vh] h-[30vh] min-w-28 bg-green-300 m-4 flex-shrink-0 pointer-events-none"}>
                                     {el}
                                 </motion.div>
                             ))
