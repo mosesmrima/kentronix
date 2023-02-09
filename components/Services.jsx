@@ -1,15 +1,18 @@
 import {motion} from "framer-motion"
 import {useState, useRef, useEffect} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Services() {
     const [width, setWidth] = useState(0)
     const carousel = useRef()
     useEffect(() => {
-        setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth)
+        setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+        AOS.init();
     }, [])
     return (
         <>
-            <div className={"p-0 m-0 w-[100vw] h-[70vh] overflow-hidden flex flex-col justify-center items-center"}>
+            <div  data-aos="flip-up" className={"p-0 m-0 w-[100vw] h-[70vh] overflow-hidden flex flex-col justify-center items-center"}>
                 <h1>Services</h1>
                 <motion.div ref={carousel} className={"carousel cursor-grab w-10/12 overflow-hidden flex rounded-full sm:px-12"}>
                     <motion.div drag={"x"} dragConstraints={{right: 0, left: -width}} className={"inner-carousel flex flex-shrink-0  w-12/12 h-[400px] justify-center items-center "}>

@@ -1,12 +1,18 @@
 import Image from "next/image";
 import {motion, useMotionValue, useTransform} from "framer-motion"
+import {useEffect} from "react";
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 export default function AboutUs() {
     const rotate = useMotionValue(0)
     const circularMotion = useTransform(rotate, value => `rotate(${value}deg)`)
+    useEffect(() => {
+        AOS.init();
+    }, [])
 
     return (
-       <div className={"sm:w-10/12 w-11/12 sm:h-64 mx-auto mt-16 sm:flex justify-center items-center relative rounded-full shadow-2xl mb-8"}>
+       <div data-aos="fade-down" className={"sm:w-10/12 w-11/12 sm:h-64 mx-auto mt-16 sm:flex justify-center items-center relative rounded-full shadow-2xl mb-8"}>
            <div className={"sm:h-64 h-[70vh] sm:w-9/12  bg-gradient-to-r from-slate-50 to-blue-500 rounded-3xl shadow-2xl flex flex-col justify-center items-center"}>
              <h1 className={"mb-4"}>About Us</h1>
              <p className={"w-10/12 mx-auto"}>
