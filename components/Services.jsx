@@ -1,38 +1,29 @@
-import Image from "next/image"
 import {motion} from "framer-motion"
+import {useState, useRef, useEffect} from "react";
 
 export default function Services() {
+    const [width, setWidth] = useState(0)
+    const carousel = useRef()
+    useEffect(() => {
+        setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth)
+    }, [])
     return (
         <>
-            <div className={""}>
-                <h1 className={"text-center text-4xl font-extrabold"}>Services</h1>
-            </div>
-            <motion.div className={" flex justify-center items-center p-5 cursor-grab  overflow-hidden mb-"}>
-                <motion.div className={"rounded-full h-[100%] width-10/12 flex justify-center items-center shrink-0"}
-                            drag={"x"}
-                            dragConstraints={{}}
-                >
-                    {
-                        [1, 2, 3, 4, 5, 7].map((_, index) => (
-                            <motion.div key={index} className={"rounded-3xl p-4 flex justify-center flex-col items-center mx-2 bg-gradient-to-r from-slate-100 to-blue-500 sm:max-w-[400px] max-w-[270px] h-[90%]"}
-                            >
-                                <div className={"w-6/12"}>
-                                    <Image
-                                        src={"/favicon.png"}
-                                        fill={true}
-                                        alt={"logo"}
-                                    />
-                                </div>
-                               <div className={"w-6/12"}>
-                                   <p className={"break-words"}>
-                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                   </p>
-                               </div>
-                            </motion.div>
-                        ))
-                    }
+            <h1>Services</h1>
+            <div className={"p-0 m-0 w-[100vw] h-[70vh] overflow-hidden flex justify-center items-center"}>
+                <motion.div ref={carousel} className={"carousel cursor-grab w-10/12 overflow-hidden flex"}>
+                    <motion.div drag={"x"} dragConstraints={{right: 0, left: -width}} className={"inner-carousel flex flex-shrink-0  w-12/12 h-[400px] justify-center items-center "}>
+                        {
+                            [1,2,3,4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((el) => (
+                                <motion.div key={el} className={"p-8 rounded-3xl carousel-item w-52 h-60 min-w-28 bg-green-300 m-4 flex-shrink-0 pointer-events-none"}>
+                                    {el}
+                                </motion.div>
+                            ))
+                        }
+                    </motion.div>
+
                 </motion.div>
-            </motion.div>
+            </div>
         </>
     );
 }

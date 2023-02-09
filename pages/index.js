@@ -1,6 +1,7 @@
 import Head from "next/head"
 import AboutUs from "../components/AboutUs";
 import {NavBar} from "../components/NavBar";
+import Services from "../components/Services";
 export default function Home() {
 
   return (
@@ -13,8 +14,7 @@ export default function Home() {
         <NavBar/>
         <div className={"sm:mt-0 mt-28 p-8"}>
             <AboutUs/>
-
-            {/*<Services/>*/}
+            <Services/>
         </div>
     </div>
   )

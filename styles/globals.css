@@ -3,7 +3,7 @@
         @apply scroll-smooth  bg-gradient-to-r from-slate-50 to-blue-500;
     }
     h1 {
-        @apply text-slate-800 text-center text-4xl font-extrabold leading-3
+        @apply text-slate-900 text-center text-4xl font-extrabold leading-3
     }
 }
 
