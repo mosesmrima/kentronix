@@ -89,7 +89,7 @@ export default function GetQuotation() {
 
                         <div className="relative z-0  sm:w-[45vw] w-[55vw] mb-6 group">
                             <Field as={"textarea"} name="description" id="description"
-                                   className="sm:h-[19vh] h-[40vh] block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-2 rounded-2xl border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                   className="sm:h-[19vh] h-[30vh] block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-2 rounded-2xl border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                    placeholder=" " required/>
                             <label htmlFor={"description"}
                                    className="peer-focus:font-medium absolute ml-4 text-sm text-slate-900 dark:text-slate-900 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-slate-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">What service do you require?</label>
