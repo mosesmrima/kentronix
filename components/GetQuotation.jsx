@@ -97,7 +97,7 @@ export default function GetQuotation() {
 
                         <ErrorMessage name={"description"} component="div" className={"text-red-900"}/>
 
-                        <button type="submit" disabled={isSubmitting} className={"text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-[20vw] sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"}>
+                        <button type="submit" disabled={isSubmitting} className={"text-center text-slate-900 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-[20vw] sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"}>
 
                             Submit
 
