@@ -4,7 +4,7 @@ import { send } from 'emailjs-com';
 export default function GetQuotation() {
     return (
         <div className={"rounded-[50px] bg-blue-400  sm:w-[80vw] w-[80vw] sm:h-[63vh] h-[77vh] min-w-28 flex flex-col gap-8 justify-start items-center"}>
-            <h2 className={"mb-4"}>Get Quotation</h2>
+            <h2 className={"mb-4 mt-4"}>Get Quotation</h2>
             <Formik
 
                 initialValues={{ email: '', description: '' }}
