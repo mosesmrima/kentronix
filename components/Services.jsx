@@ -1,5 +1,7 @@
 import {motion} from "framer-motion"
 import {useState, useRef, useEffect} from "react";
+import Service from './Service'
+import serviceData from "./serviceData";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -12,14 +14,14 @@ export default function Services() {
     }, [])
     return (
         <>
-            <div  data-aos="flip-up" className={"p-0 m-0 w-[100vw] h-[70vh] overflow-hidden flex flex-col justify-center items-center"}>
-                <h1>Services</h1>
+            <div  data-aos="flip-up" className={"mt-8 p-0 m-0 w-[100vw] h-[70vh] overflow-hidden flex flex-col justify-center items-center"}>
+                <h1 className={"m-8"}>Services</h1>
                 <motion.div ref={carousel} className={"carousel cursor-grab w-10/12 overflow-hidden flex rounded-full sm:px-12"}>
                     <motion.div drag={"x"} dragConstraints={{right: 0, left: -width}} className={"inner-carousel flex flex-shrink-0  w-12/12 h-[400px] justify-center items-center "}>
                         {
-                            [1,2,3,4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((el) => (
-                                <motion.div key={el} className={"p-8 rounded-3xl carousel-item sm:w-[30vw] w-[70vw] sm:h-[50vh] h-[30vh] min-w-28 bg-gradient-to-r from-blue-400 to-slate-300 m-4 flex-shrink-0 pointer-events-none"}>
-                                    {el}
+                           serviceData.map((el, index) => (
+                                <motion.div key={index} className={"p-8 rounded-3xl carousel-item sm:w-[30vw] w-[70vw] sm:h-[50vh] h-[40vh] min-w-28 bg-gradient-to-r from-blue-400 to-slate-300 m-4 flex-shrink-0 pointer-events-none"}>
+                                    <Service title={el.title} services={el.services} />
                                 </motion.div>
                             ))
                         }

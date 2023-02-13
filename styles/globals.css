@@ -5,6 +5,16 @@
     h1 {
         @apply text-slate-900 text-center text-4xl font-extrabold leading-3
     }
+    h2 {
+        @apply text-slate-900 text-center text-3xl font-extrabold
+    }
+}
+
+.neuro {
+    border-radius: 50px;
+    background: red;
+    box-shadow:  20px 20px 60px red,
+    -20px -20px 60px red;
 }
 
 @tailwind base;
