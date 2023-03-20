@@ -20,7 +20,7 @@ export default function Home() {
         </Head>
         <NavBar/>
 
-        <div className="relative flex w-screen sm:min-h-screen  mt-24 sm:mt-12 flex-col justify-center overflow-hidden bg-gradient-to-bl from-pink-400 to-sky-300">
+        <div className="relative flex w-screen sm:min-h-screen  sm:mt-[18dvh] mt-[15dvh] flex-col justify-center overflow-hidden bg-gradient-to-bl from-pink-400 to-sky-300">
             <img src="/images/circuit.svg" alt=""
                  className="absolute top-1/2 left-1/2  max-w-none w-[100vw] -translate-x-1/2 -translate-y-1/2 "/>
 
