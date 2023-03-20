@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme")
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
@@ -10,6 +12,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        press: ["Press Start 2P"],
+      },
        backgroundImage: {
         'about': "url('../public/images/blury_back.svg')",
          'services': "url('../public/images/polygon_luminary.svg')",

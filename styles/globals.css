@@ -8,6 +8,9 @@
     h2 {
         @apply text-slate-900 text-center text-4xl font-extrabold
     }
+    h3 {
+        @apply bg-gradient-to-r from-sky-300 to-black bg-clip-text text-transparent text-4xl sm:text-5xl font-extrabold
+    }
 }
 
 .neuro {

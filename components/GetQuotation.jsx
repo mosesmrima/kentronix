@@ -5,7 +5,7 @@ export default function GetQuotation() {
     return (
         <div className={"bg-gradient-to-bl from-pink-400 to-sky-400 bg-opacity-100 backdrop-blur-lg rounded-[50px]   max-w-[400px] sm:max-w-[600px] min-w-28 flex flex-col gap-8 justify-start items-center"}>
 
-            <h2 className={"mb-4 mt-4"}>Get Quotation</h2>
+            <h3 className={"mb-4 mt-4"}>Get Quotation</h3>
             <Formik
 
                 initialValues={{ email: '', description: '' }}

@@ -16,6 +16,7 @@ export default function Home() {
             <title>Kentronix</title>
             <link rel={"icon"} href={"/favicon.png"}/>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         </Head>
         <NavBar/>
 
@@ -33,7 +34,7 @@ export default function Home() {
 
                         <span
                             className="before:absolute before:-z-10 before:text-black before:content-[attr(data-text)]"
-                            data-text="Reliable"><span
+                            data-text="Reliable."><span
                             className="animate-gradient-2 bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent"> Reliable. </span> </span>
 
                         <span
@@ -41,7 +42,7 @@ export default function Home() {
                             data-text="Smart."><span
                             className="animate-gradient-3 bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent">Smart.</span> </span>
                     </h1>
-                    <h3 className={"text-black bg-clip-text text-transparent text-center text-2xl sm:text-3xl max-w-[400px] mx-auto"}>Bringing Secure, reliable and Smarter solutions to the corprate world</h3>
+                    <h3 className={"text-black bg-clip-text text-transparent text-center text-2xl sm:text-3xl max-w-[400px] mx-auto"}>Bringing Secure, reliable and Smarter solutions to the corporate world</h3>
                 </div>
             </div>
         </div>
