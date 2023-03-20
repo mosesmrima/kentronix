@@ -1,12 +1,12 @@
 @layer base {
     html {
-        @apply scroll-smooth  bg-gradient-to-r from-slate-50 to-blue-500;
+        /*@apply scroll-smooth  bg-gradient-to-r from-slate-50 to-blue-500;*/
     }
     h1 {
-        @apply text-slate-900 text-center text-4xl font-extrabold leading-3
+        @apply text-slate-900 text-center text-4xl  font-extrabold
     }
     h2 {
-        @apply text-slate-900 text-center text-3xl font-extrabold
+        @apply text-slate-900 text-center text-4xl font-extrabold
     }
 }
 
@@ -16,6 +16,7 @@
     box-shadow:  20px 20px 60px red,
     -20px -20px 60px red;
 }
+
 
 @tailwind base;
 @tailwind components;

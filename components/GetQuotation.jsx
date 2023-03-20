@@ -3,7 +3,8 @@ import { send } from 'emailjs-com';
 
 export default function GetQuotation() {
     return (
-        <div className={"rounded-[50px] bg-blue-400  sm:w-[80vw] w-[80vw] sm:h-[63vh] h-[77vh] min-w-28 flex flex-col gap-8 justify-start items-center"}>
+        <div className={"bg-gradient-to-bl from-pink-400 to-sky-400 bg-opacity-100 backdrop-blur-lg rounded-[50px]   max-w-[400px] sm:max-w-[600px] min-w-28 flex flex-col gap-8 justify-start items-center"}>
+
             <h2 className={"mb-4 mt-4"}>Get Quotation</h2>
             <Formik
 
@@ -65,7 +66,7 @@ export default function GetQuotation() {
 
                 {({ isSubmitting }) => (
 
-                    <Form  className="relative z-0 w- mb-6  sm:w-[75vw] w-[75vw] sm:h-[40vh] h-[63vh] min-w-28 flex flex-col justify-center items-center  shadow-[inset_20px_20px_60px_#326fd1_inset_-20px_-20px_60px_#4496ff]">
+                    <Form  className="relative z-0 w- mb-6  sm:w-[75vw] w-[75vw]  min-w-28 flex flex-col justify-center items-center  shadow-[inset_20px_20px_60px_#326fd1_inset_-20px_-20px_60px_#4496ff]">
                         <div className="relative z-0  sm:w-[20vw] w-[40vw] mb-6 group">
                             <Field type="text" name="name" id="name"
                                    className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
@@ -87,9 +88,9 @@ export default function GetQuotation() {
 
                         <ErrorMessage name="email" component="div" className={"text-red-900"} />
 
-                        <div className="relative z-0  sm:w-[45vw] w-[55vw] mb-6 group">
+                        <div className="relative z-0  min-w-[250px] sm:min-w-[400px] max-w-[290px] sm:max-w-[400px] mb-6 group flex justify-center items-center">
                             <Field as={"textarea"} name="description" id="description"
-                                   className="sm:h-[19vh] h-[30vh] block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-2 rounded-2xl border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                   className=" block py-2.5 px-0 w-10/12 text-sm text-gray-900 bg-transparent border-0 border-2 rounded-2xl border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                    placeholder=" " required/>
                             <label htmlFor={"description"}
                                    className="peer-focus:font-medium absolute ml-4 text-sm text-slate-900 dark:text-slate-900 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-slate-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">What service do you require?</label>
