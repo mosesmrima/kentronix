@@ -16,23 +16,14 @@ export default function AboutUs() {
 
     return (
         <>
-            <div  className={"bg-gradient-to-bl from-pink-400 to-sky-300 bg-opacity-0 relative flex flex-col justify-center items-center w-screen p-8 min-h-screen mx-auto mt-16 relative -mt-0"}>
+            <div  className={"bg-gradient-to-bl from-pink-400/50 to-sky-300/50 relative flex flex-col justify-center items-center w-screen p-8 min-h-screen mx-auto mt-16 relative -mt-0"}>
 
-                <div className="absolute top-0 -left-4 w-40 h-40 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-90 animate-blob">
-                </div>
-                <div className="absolute top-0 -right-4 w-40 h-40 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-90 animate-blob animation-delay-2000">
-                </div>
-                <div className="absolute -bottom-4 left-20 w-40 h-40 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-90 animate-blob animation-delay-4000">
-                </div>
-                <div className="absolute top-0 left-50 w-40 h-40 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-90 animate-blob">
-                </div>
-                <div className="absolute top-50 right-50 w-40 h-40 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-90 animate-blob animation-delay-2000">
-                </div>
-                <div className="absolute top-50 right-20 w-40 h-40 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-90 animate-blob animation-delay-2000">
-                </div>
-                <div className="absolute bottom-0 right- w-40 h-40 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-90 animate-blob animation-delay-4000">
-                </div>
-                <div className="absolute bottom-0 right-0 w-40 h-40 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-90 animate-blob">
+                <div className={"relative w-full max-w-lg"}>
+                    <div
+                        className="absolute top-20 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-lg opacity-70 animate-blob"></div>
+
+                    <div
+                        className="absolute top-20 -right-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-lg opacity-70 animate-blob animation-delay-4000"></div>
                 </div>
                 <div>
                     <h2>About Us</h2>
